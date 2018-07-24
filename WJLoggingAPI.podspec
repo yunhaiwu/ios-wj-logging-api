@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WJLoggingAPI"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "日志API."
 
   s.homepage     = "https://github.com/yunhaiwu"

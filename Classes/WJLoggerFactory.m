@@ -20,7 +20,8 @@
 static id<IWJLogger> logger = nil;
 
 +(id<IWJLogger>) getLogger {
-    if (!logger) {
+    static dispatch_once_t loggerOnceToken;
+    dispatch_once(&loggerOnceToken, ^{
         Class clazz = NSClassFromString(@"WJLogger");
         if (clazz) {
             if ([clazz conformsToProtocol:@protocol(IWJLogger)]) {
@@ -30,7 +31,7 @@ static id<IWJLogger> logger = nil;
                 @throw [NSException exceptionWithName:@"WJLoggerFactoryException" reason:reason userInfo:@{@"WJLoggerClassName":@"WJLogger"}];
             }
         }
-    }
+    });
     return logger;
 }
 

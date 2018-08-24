@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C12706C71C2E3BC3003A7B71 /* WJLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C12706C61C2E3BC3003A7B71 /* WJLogger.m */; };
+		608B5F7721305E0C00954A98 /* WJLoggerBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 608B5F7621305E0C00954A98 /* WJLoggerBinder.m */; };
 		C1F0F7091C1D232000E99461 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F7081C1D232000E99461 /* main.m */; };
 		C1F0F70C1C1D232000E99461 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F70B1C1D232000E99461 /* AppDelegate.m */; };
 		C1F0F70F1C1D232000E99461 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F70E1C1D232000E99461 /* ViewController.m */; };
 		C1F0F7121C1D232000E99461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F7101C1D232000E99461 /* Main.storyboard */; };
 		C1F0F7141C1D232000E99461 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F7131C1D232000E99461 /* Images.xcassets */; };
 		C1F0F7171C1D232000E99461 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F7151C1D232000E99461 /* LaunchScreen.xib */; };
-		C1F0F7321C1D241E00E99461 /* WJLoggerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F7311C1D241E00E99461 /* WJLoggerFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C12706C51C2E3BC3003A7B71 /* WJLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLogger.h; sourceTree = "<group>"; };
-		C12706C61C2E3BC3003A7B71 /* WJLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLogger.m; sourceTree = "<group>"; };
-		C12706C81C2E3ECB003A7B71 /* WJLoggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLoggingMacros.h; sourceTree = "<group>"; };
+		608B5F7521305E0C00954A98 /* WJLoggerBinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJLoggerBinder.h; sourceTree = "<group>"; };
+		608B5F7621305E0C00954A98 /* WJLoggerBinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLoggerBinder.m; sourceTree = "<group>"; };
+		608B5F7821305E1C00954A98 /* IWJLoggerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWJLoggerFactory.h; sourceTree = "<group>"; };
+		608B5F792130625F00954A98 /* WJLoggingAPI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = WJLoggingAPI.podspec; path = ../../WJLoggingAPI.podspec; sourceTree = "<group>"; };
+		608B5F7A2130625F00954A98 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		C12706C81C2E3ECB003A7B71 /* WJLoggingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLoggingAPI.h; sourceTree = "<group>"; };
 		C1F0F7031C1D232000E99461 /* WJLoggingAPI-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WJLoggingAPI-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F7071C1D232000E99461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F0F7081C1D232000E99461 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		C1F0F7131C1D232000E99461 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C1F0F7161C1D232000E99461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C1F0F72E1C1D234800E99461 /* IWJLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWJLogger.h; sourceTree = "<group>"; };
-		C1F0F7301C1D241E00E99461 /* WJLoggerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLoggerFactory.h; sourceTree = "<group>"; };
-		C1F0F7311C1D241E00E99461 /* WJLoggerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLoggerFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +50,8 @@
 		C1F0F6FA1C1D232000E99461 = {
 			isa = PBXGroup;
 			children = (
+				608B5F7A2130625F00954A98 /* README.md */,
+				608B5F792130625F00954A98 /* WJLoggingAPI.podspec */,
 				C1F0F72C1C1D232E00E99461 /* Classes */,
 				C1F0F7051C1D232000E99461 /* WJLoggingAPI-example */,
 				C1F0F7041C1D232000E99461 /* Products */,
@@ -75,8 +77,6 @@
 				C1F0F7131C1D232000E99461 /* Images.xcassets */,
 				C1F0F7151C1D232000E99461 /* LaunchScreen.xib */,
 				C1F0F7061C1D232000E99461 /* Supporting Files */,
-				C12706C51C2E3BC3003A7B71 /* WJLogger.h */,
-				C12706C61C2E3BC3003A7B71 /* WJLogger.m */,
 			);
 			path = "WJLoggingAPI-example";
 			sourceTree = "<group>";
@@ -94,9 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				C1F0F72E1C1D234800E99461 /* IWJLogger.h */,
-				C1F0F7301C1D241E00E99461 /* WJLoggerFactory.h */,
-				C1F0F7311C1D241E00E99461 /* WJLoggerFactory.m */,
-				C12706C81C2E3ECB003A7B71 /* WJLoggingMacros.h */,
+				608B5F7821305E1C00954A98 /* IWJLoggerFactory.h */,
+				608B5F7521305E0C00954A98 /* WJLoggerBinder.h */,
+				608B5F7621305E0C00954A98 /* WJLoggerBinder.m */,
+				C12706C81C2E3ECB003A7B71 /* WJLoggingAPI.h */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -172,9 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12706C71C2E3BC3003A7B71 /* WJLogger.m in Sources */,
+				608B5F7721305E0C00954A98 /* WJLoggerBinder.m in Sources */,
 				C1F0F70F1C1D232000E99461 /* ViewController.m in Sources */,
-				C1F0F7321C1D241E00E99461 /* WJLoggerFactory.m in Sources */,
 				C1F0F70C1C1D232000E99461 /* AppDelegate.m in Sources */,
 				C1F0F7091C1D232000E99461 /* main.m in Sources */,
 			);
